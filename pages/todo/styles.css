@@ -50,7 +50,6 @@ input {
     margin-bottom: 5px;
 }
 
-#enviar{
-    background-color: #0074d9;
-    color: white;
+.manda{
+    background-color:#0074d9 ;
 }
