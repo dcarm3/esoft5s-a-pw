@@ -17,7 +17,7 @@ function carregarTarefas() {
 
     listaTarefas.forEach(function (tarefa) {
         const item = document.createElement("li");
-        item.innerText = `Título: ${tarefa.titulo}, Descrição: ${tarefa.descricao}`;
+        item.innerHTML = `Tarefa: ${tarefa.titulo} <br> Descrição: ${tarefa.descricao}`;
         lista.appendChild(item);
     });
 }

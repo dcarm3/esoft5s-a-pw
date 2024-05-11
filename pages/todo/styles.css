@@ -49,3 +49,8 @@ input {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+#enviar{
+    background-color: #0074d9;
+    color: white;
+}

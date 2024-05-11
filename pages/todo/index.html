@@ -15,11 +15,9 @@
     </header>
     <main>
         <form id="formTarefas" onsubmit="enviar()">
-            <label for="titulo">Tarefa</label>
-            <input type="text" id="titulo" name="titulo"><br>
-            <label for="descricao">Descrição</label>
-            <textarea name="descricao" id="descricao"></textarea><br>
-            <input type="submit" value="Criar tarefa">
+            <input type="text" id="titulo" name="titulo" placeholder="Título da tarefa"><br>
+            <textarea name="descricao" id="descricao" placeholder="Descrição da tarefa"></textarea><br>
+            <input type="submit" value="Criar tarefa" id="enviar">
         </form>
         <br>
         <ul class="listaTarefas">
@@ -27,13 +25,11 @@
     </main>
     <footer aria-label="Rodapé">
         <p aria-label="Copyright">
-            &copy; 2024 Página do Pokémon Squirtle. Todos os direitos reservados.
+            &copy; 2024 To do list
         </p>
-        <p><a href="#header">Voltar para o topo</a></p>
-        <p><a href="mailto:contato@squirtlepage.com">Contato via e-mail</a></p>
-        <p><a href="tel:+5555555555">Telefone: (55) 5555-5555</a></p>
     </footer>
     <script src="./index.js"></script>
+    <script src="../../index.js"></script>
 </body>
 
 </html>
