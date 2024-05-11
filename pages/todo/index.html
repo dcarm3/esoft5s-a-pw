@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="tarefa" content="lista de tarefas" />
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Lista de tarefas</h1>
+    </header>
+    <main>
+        <form id="formTarefas" onsubmit="enviar()">
+            <label for="titulo">Tarefa</label>
+            <input type="text" id="titulo" name="titulo"><br>
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao"></textarea><br>
+            <input type="submit" value="Criar tarefa">
+        </form>
+        <br>
+        <ul class="listaTarefas">
+        </ul>
+    </main>
+    <footer aria-label="Rodapé">
+        <p aria-label="Copyright">
+            &copy; 2024 Página do Pokémon Squirtle. Todos os direitos reservados.
+        </p>
+        <p><a href="#header">Voltar para o topo</a></p>
+        <p><a href="mailto:contato@squirtlepage.com">Contato via e-mail</a></p>
+        <p><a href="tel:+5555555555">Telefone: (55) 5555-5555</a></p>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
