@@ -1,33 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="tarefa" content="lista de tarefas" />
-    <title>Lista de tarefas</title>
+    <title>Todo List</title>
     <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-    <header>
-        <h1>Lista de tarefas</h1>
-    </header>
-    <main>
-        <form id="formTarefas" onsubmit="enviar()">
-            <input type="text" id="titulo" name="titulo" placeholder="Título da tarefa"><br>
-            <textarea name="descricao" id="descricao" placeholder="Descrição da tarefa"></textarea><br>
-            <input type="submit" value="Criar tarefa" class="manda">
+    <div class="container">
+        <header>
+            <h1>Todo List</h1>
+        </header>
+        <main>
+            <form id="taskForm" onsubmit="addTask(event)">
+                <input type="text" name="title" id="title" required placeholder="Informe o título da tarefa" />
+                <textarea id="description" name="description" required
+                    placeholder="Informe a descrição da tarefa"></textarea>
+                <button type="submit">Salvar Tarefa</button>
+            </form>
+
+            <ul id="taskList"></ul>
+        </main>
+        <footer>&copy; 2024 Todo List</footer>
+    </div>
+
+    <dialog id="editDialog">
+        <form method="dialog">
+            <label for="editTitle">Título:</label>
+            <input type="text" id="editTitle" name="editTitle" required />
+            <label for="editDescription">Descrição:</label>
+            <textarea id="editDescription" name="editDescription" required></textarea>
+
+            <menu>
+                <button type="submit">Editar Tarefa</button>
+                <button id="cancelb" type="reset">Cancelar</button>
+            </menu>
         </form>
-        <br>
-        <ul class="listaTarefas">
-        </ul>
-    </main>
-    <footer aria-label="Rodapé">
-        <p aria-label="Copyright">
-            &copy; 2024 To do list
-        </p>
-    </footer>
+
+        
+    </dialog>
+
     <script src="./index.js"></script>
     <script src="../../index.js"></script>
 </body>
